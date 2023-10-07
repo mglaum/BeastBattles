@@ -37,6 +37,7 @@
   }
 }
 /* Style for the container */
+/* Style for the container */
 .container {
   display: flex;
   flex-direction: column;
@@ -56,14 +57,20 @@ button {
   cursor: pointer;
 }
 
-/* Style for the image */
-img {
-  max-width: 100%;
+/* Style for the image and name container */
+.fighter-container {
+  display: flex;
+  justify-content: space-around;
   margin-top: 20px;
 }
 
+/* Style for the image */
+.fighter-image {
+  max-width: 100%;
+}
+
 /* Style for the name */
-p {
+.fighter-name {
   font-size: 24px;
   margin-top: 10px;
 }
