@@ -16,7 +16,7 @@ function App() {
       {randomIndex !== null && (
         <div>
           <img
-            src={FighterData[randomIndex].image.default}
+            src={FighterData[randomIndex].image}
             alt={FighterData[randomIndex].name}
           />
           <p>{FighterData[randomIndex].name}</p>
