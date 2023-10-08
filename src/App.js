@@ -23,7 +23,6 @@ function App() {
       <Route path='/' element={ <Landing/> } />
       <Route path='/test' element={ <FighterGenerator/> } />
       <Route path='/roster' element={<Roster/>} />
-      <Route path='/1' element={<Fighter1/>} />
       <Route path="/:id" element={<Fighter0 />} /> {/* Updated route */}
     </Routes>
     // <FighterGenerator/>
