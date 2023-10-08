@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:ital,wght@1,700&family=Righteous&display=swap');
 .image-container {
     display: flex; 
     justify-content: space-evenly; 
@@ -22,13 +23,16 @@
   }
   .image-container p {
     margin-top: 10px; /* Adjust as needed */
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 3vh; 
   }
 
-  @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:ital,wght@1,700&family=Righteous&display=swap');
-.fire {
-    animation: flicker 2s infinite, move-up 2s;
+  
+.fire_name {
+    /* animation: flicker 2s infinite, move-up 2s; */
     color: #ffffff; 
     font-family: 'Dela Gothic One', cursive;
+    font-size: 40px;
     text-shadow:
     0px -1px 3px #fff, /* Innermost layer - intense heat (white) */
     0px -2px 6px #FF3, /* Second layer - core of flame (yellow) */

@@ -3,7 +3,7 @@
     animation: flicker 2s infinite, move-up 2s;
     color: #ffffff; 
     font-family: 'Dela Gothic One', cursive;
-    top: 35%;
+    top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -39,7 +39,7 @@
 
 @keyframes move-up {
     0% {top: 75%; opacity: 0}
-    100% {top: 35%; opacity: 1}
+    100% {top: 50%; opacity: 1}
   }
 
 .background {
