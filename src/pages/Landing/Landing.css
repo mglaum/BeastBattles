@@ -157,3 +157,17 @@
 .text {
     font-family: 'Montserrat', sans-serif;
 }
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Apply the fade-out animation when the fade-out class is present */
+.background.fade-out {
+  animation: fadeOut 0.5s ease-out;
+}
