@@ -10,7 +10,7 @@ const Landing = () => {
     setFade(true); // Trigger the fade-out animation
 
     setTimeout(() => {
-      navigate('/roster'); // Navigate to the next page after the fade-out animation
+      navigate('/instructions'); // Navigate to the next page after the fade-out animation
     }, 500); // Adjust the duration to match your CSS animation duration
   };
 

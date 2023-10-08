@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Landing from './pages/Landing/Landing';
+import Instructions from './pages/Instructions/Instructions';
 import FighterGenerator from './FighterGenerator';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; 
 import Roster from './pages/Roster/Roster';
@@ -22,6 +23,7 @@ function App() {
     <Routes>
       <Route path='/' element={ <Landing/> } />
       <Route path='/test' element={ <FighterGenerator/> } />
+      <Route path='/instructions' element={<Instructions/> } />
       <Route path='/roster' element={<Roster/>} />
       <Route path="/:id" element={<Fighter0 />} /> {/* Updated route */}
     </Routes>
