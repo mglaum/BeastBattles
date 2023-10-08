@@ -1,0 +1,23 @@
+.row-eboard {
+    padding-bottom: 20px;
+  }
+  .contact-card {
+    padding: 20px 20px 0 20px;
+  }
+
+  /* Style for the container */
+.image-container {
+    display: flex; /* Use flexbox for a horizontal layout */
+    justify-content: space-between; /* Distribute space between images */
+    max-width: 800px; /* Set a maximum width for the container */
+    margin: 20vh auto; /* Center the container with 20vh margins */
+  }
+  
+  /* Style for each image */
+  .image-container img {
+    width: 100%; /* Make images fill the container width */
+    max-width: 100%; /* Ensure images don't exceed their original size */
+    height: auto; /* Maintain aspect ratio */
+    border: 5px solid maroon; /* Maroon border */
+  }
+  

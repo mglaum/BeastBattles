@@ -24,4 +24,8 @@ export const FighterData = [
         image: require("./images/fighters/FighterImages/madamepookie.jpeg"),
         name: "Madame Pookie", 
     }, 
+    {
+        image: require("./images/fighters/FighterImages/fartgamble.jpeg"),
+        name: "Fart Gamble", 
+    }, 
 ]
