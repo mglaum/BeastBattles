@@ -63,7 +63,19 @@ const Fighter0 = () => {
 
   const handleButtonClick = () => {
     const db = firebase.firestore();
-    const clicksRef = db.collection('clicks0').doc('vO3ehChDDhpawJR93gZW'); // Replace 'yourDocId' with the actual document ID.
+    let clicksRef; 
+    if (id == 0) {
+      clicksRef = db.collection('clicks0').doc('vO3ehChDDhpawJR93gZW'); 
+     }
+     else if (id == 1) {
+       clicksRef = db.collection('clicks1').doc('eTZTZoLjTGfQGF8JAVmM');
+     }
+     else if (id == 2) {
+       clicksRef = db.collection('clicks2').doc('RBXhoi4L688oIywFUZrn');
+     }
+     else if (id == 3) {
+       clicksRef = db.collection('clicks3').doc('MmZ3jZW3Afpr63DgDsT2');
+     }
 
     // Increment click count
     clicksRef.update({
