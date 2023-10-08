@@ -43,8 +43,8 @@
   }
 
 .background {
-    background-image: url("../../images/background/boxingring.gif"); 
-    background-size: cover; 
+    /* background-image: url("../../images/background/boxingring.gif"); 
+    background-size: cover;  */
     height: 100vh; 
 }
 

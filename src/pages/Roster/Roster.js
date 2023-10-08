@@ -10,24 +10,37 @@ const Roster = () => {
   };
 
   return (
+    <div className="background">
 <div className="image-container">
+    <div className="image-container-item">
     <img
         src={FighterData[0].image}
         alt={FighterData[0].name}
      />
+        <p className="fire"> {FighterData[0].name} </p>
+     </div>
+     <div className="image-container-item">
     <img
         src={FighterData[1].image}
         alt={FighterData[1].name}
     />
-        <img
+        <p> {FighterData[1].name} </p>
+    </div>
+    <div className="image-container-item">
+    <img
         src={FighterData[2].image}
         alt={FighterData[2].name}
      />
+        <p> {FighterData[2].name} </p>
+     </div>
+     <div className="image-container-item">
     <img
         src={FighterData[3].image}
         alt={FighterData[3].name}
     />
-
+        <p> {FighterData[3].name} </p>
+    </div>
+</div>
 </div>
   );
 };

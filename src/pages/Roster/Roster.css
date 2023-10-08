@@ -1,23 +1,62 @@
-.row-eboard {
-    padding-bottom: 20px;
-  }
-  .contact-card {
-    padding: 20px 20px 0 20px;
-  }
-
-  /* Style for the container */
 .image-container {
-    display: flex; /* Use flexbox for a horizontal layout */
-    justify-content: space-between; /* Distribute space between images */
-    max-width: 800px; /* Set a maximum width for the container */
-    margin: 20vh auto; /* Center the container with 20vh margins */
+    display: flex; 
+    justify-content: space-evenly; 
+    align-items: center;
+    height: 100vh; 
   }
   
-  /* Style for each image */
   .image-container img {
-    width: 100%; /* Make images fill the container width */
-    max-width: 100%; /* Ensure images don't exceed their original size */
-    height: auto; /* Maintain aspect ratio */
-    border: 5px solid maroon; /* Maroon border */
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 5px solid maroon; 
+    top:50%; 
   }
+
+  .background {
+    height: 100vh; 
+}
+
+.image-container-item {
+    text-align: center; /* Center text */
+  }
+  .image-container p {
+    margin-top: 10px; /* Adjust as needed */
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:ital,wght@1,700&family=Righteous&display=swap');
+.fire {
+    animation: flicker 2s infinite, move-up 2s;
+    color: #ffffff; 
+    font-family: 'Dela Gothic One', cursive;
+    text-shadow:
+    0px -1px 3px #fff, /* Innermost layer - intense heat (white) */
+    0px -2px 6px #FF3, /* Second layer - core of flame (yellow) */
+    0px -6px 12px #F90, /* Middle layer - body of flame (orange) */
+    0px -10px 20px #C33; /* Outermost layer - edges of flame (red) */
+  
+   }
+   /* Define the animation named "flicker" */
+@keyframes flicker {
+    0%, 
+    100% { 
+        text-shadow: 
+            0 -1px 3px #fff, /* Innermost layer - intense heat (white) */
+            0 -2px 6px #FF3, /* Second layer - core of flame (yellow) */
+            0 -6px 12px #F90, /* Middle layer - body of flame (orange) */
+            0 -10px 20px #C33; /* Outermost layer - edges of flame (red) */
+    }
+    50% { 
+        text-shadow: 
+            0 -2px 6px #fff, /* Innermost layer - intense heat (white) */
+            0 -4px 12px #FF3, /* Second layer - core of flame (yellow) */
+            0 -8px 16px #F90, /* Middle layer - body of flame (orange) */
+            0 -12px 24px #C33; /* Outermost layer - edges of flame (red) */
+    }
+}
+/* 
+@keyframes move-up {
+    0% {top: 75%; opacity: 0}
+    100% {top: 35%; opacity: 1}
+  } */
   
