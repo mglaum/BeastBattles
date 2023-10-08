@@ -1,0 +1,41 @@
+/* FighterPage.css */
+
+.fighter-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .fighter-details {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .fighter-image img {
+    width: 0;
+    height: 0;
+    animation: zoom 1s ease forwards; /* Keep the final state */
+  }
+  
+  .fighter-name p {
+    margin-top: 10px;
+    opacity: 0; /* Start with opacity 0 */
+    animation: zoom 1s ease forwards; /* Keep the final state */
+  }
+  
+  @keyframes zoom {
+    0% {
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 1;
+    }
+  }
+  

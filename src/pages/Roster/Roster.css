@@ -1,66 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:ital,wght@1,700&family=Righteous&display=swap');
-.image-container {
-    display: flex; 
-    justify-content: space-evenly; 
-    align-items: center;
-    height: 100vh; 
-  }
-  
-  .image-container img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border: 5px solid maroon; 
-    top:50%; 
-  }
+/* Roster.css */
 
-  .background {
-    height: 100vh; 
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
 }
 
 .image-container-item {
-    text-align: center; /* Center text */
-  }
-  .image-container p {
-    margin-top: 10px; /* Adjust as needed */
-    font-family: 'Dela Gothic One', cursive;
-    font-size: 3vh; 
-  }
-
-  
-.fire_name {
-    /* animation: flicker 2s infinite, move-up 2s; */
-    color: #ffffff; 
-    font-family: 'Dela Gothic One', cursive;
-    font-size: 40px;
-    text-shadow:
-    0px -1px 3px #fff, /* Innermost layer - intense heat (white) */
-    0px -2px 6px #FF3, /* Second layer - core of flame (yellow) */
-    0px -6px 12px #F90, /* Middle layer - body of flame (orange) */
-    0px -10px 20px #C33; /* Outermost layer - edges of flame (red) */
-  
-   }
-   /* Define the animation named "flicker" */
-@keyframes flicker {
-    0%, 
-    100% { 
-        text-shadow: 
-            0 -1px 3px #fff, /* Innermost layer - intense heat (white) */
-            0 -2px 6px #FF3, /* Second layer - core of flame (yellow) */
-            0 -6px 12px #F90, /* Middle layer - body of flame (orange) */
-            0 -10px 20px #C33; /* Outermost layer - edges of flame (red) */
-    }
-    50% { 
-        text-shadow: 
-            0 -2px 6px #fff, /* Innermost layer - intense heat (white) */
-            0 -4px 12px #FF3, /* Second layer - core of flame (yellow) */
-            0 -8px 16px #F90, /* Middle layer - body of flame (orange) */
-            0 -12px 24px #C33; /* Outermost layer - edges of flame (red) */
-    }
+  text-align: center;
+  transform-origin: center center;
+  transition: transform 1s ease;
 }
-/* 
-@keyframes move-up {
-    0% {top: 75%; opacity: 0}
-    100% {top: 35%; opacity: 1}
-  } */
-  
+
+.image-container-item img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border: 5px solid maroon;
+}
+
+/* Center and zoom-in on the new page */
+.new-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.new-page img {
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+  border: 5px solid maroon;
+  transition: transform 1s ease;
+}
+
+.new-page p {
+  margin-top: 10px;
+  font-family: 'Dela Gothic One', cursive;
+  font-size: 3vh;
+}
+
+/* Slide to the left */
+.left-leave {
+  transform: translateX(-300%);
+}
+
+/* Slide to the right */
+.right-leave {
+  transform: translateX(300%);
+}
