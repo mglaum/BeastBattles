@@ -156,6 +156,7 @@
 
 .text {
     font-family: 'Montserrat', sans-serif;
+    font-size: 40px; 
 }
 
 @keyframes fadeOut {
