@@ -1,30 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:ital,wght@1,700&family=Righteous&display=swap');
 .image-container {
-    animation: move-up_3 2s;
-    animation-delay: 1s;
-    opacity: 0; 
-    animation-fill-mode: forwards;
-    display: flex; 
-    justify-content: space-evenly; 
-    align-items: center;
-    height: 100vh; 
-  }
-  
-  .image-container img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border: 5px solid maroon; 
-    top:50%; 
-  }
-
-  .background {
-    height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
 }
 
 .image-container-item {
-    text-align: center; /* Center text */
-  }
+  text-align: center;
+  transform-origin: center center;
+  transition: transform 1s ease;
+}
+
+.image-container-item img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border: 5px solid maroon;
+}
+
+/* Center and zoom-in on the new page */
+.new-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.new-page img {
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+  border: 5px solid maroon;
+  transition: transform 1s ease;
+}
+
+.new-page p {
+  margin-top: 10px;
+  font-family: 'Dela Gothic One', cursive;
+  font-size: 3vh;
+}
+
+/* Slide to the left */
+.left-leave {
+  transform: translateX(-300%);
+}
+
+/* Slide to the right */
+.right-leave {
+  transform: translateX(300%);
+}
+
   .image-container p {
     margin-top: 10px; /* Adjust as needed */
     font-family: 'Dela Gothic One', cursive;
@@ -92,15 +120,3 @@
     100% {top: 50%; opacity: 1}
   }
   
-  .hover06 figure img {
-    -webkit-transform: rotate(15deg) scale(1.4);
-    transform: rotate(15deg) scale(1.4);
-    -webkit-transform: rotate(0) scale(1);
-    transform: rotate(0) scale(1);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
-  }
-  .hover06 figure:hover img {
-    -webkit-transform: rotate(15deg) scale(1.4);
-    transform: rotate(15deg) scale(1.4);
-  }
