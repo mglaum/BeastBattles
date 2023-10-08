@@ -23,11 +23,11 @@ const Roster = () => {
   return (
     <div className="background">
         <div className="fire_title"> TODAY'S ROSTER </div>
-      <div className="image-container">
+      <div className="image-container move-up_3">
         {FighterData.slice(0, 4).map((fighter, index) => (
           <div
             key={index}
-            className={`image-container-item ${
+            className={`image-container-item  ${
               clickedFighter !== null
                 ? index <= 1
                   ? "left-leave"

@@ -10,9 +10,10 @@ import firebaseConfig from './firebaseConfig';
 import firebase from 'firebase/compat/app';  // Change this line
 import 'firebase/compat/firestore';          // Change this line
 import 'firebase/compat/auth';               // Change this line
+import Fighter0 from "./pages/Fighters/Fighter0";
 
 firebase.initializeApp(firebaseConfig);
-import Fighter0 from "./pages/Fighters/Fighter0";
+
 
 function App() {
   
