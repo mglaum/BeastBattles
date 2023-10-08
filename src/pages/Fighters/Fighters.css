@@ -48,6 +48,7 @@
     margin-bottom: 10px;
   }
   
+
   .strengthen-button {
     background-color: maroon;
     color: white;
@@ -57,8 +58,13 @@
     border-radius: 5px;
     cursor: pointer;
     margin-top: 20px; /* Adjust the top margin for spacing */
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 123, 255, 0.3);
   }
   
   .strengthen-button:hover {
-    background-color: maroon;
+    background: linear-gradient(45deg, #007bff, #e14d33);
+    box-shadow: 0 8px 16px rgba(0, 123, 255, 0.3);
+    transform: translateY(-2px);
+    color: white;
   }
