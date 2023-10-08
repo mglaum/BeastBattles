@@ -2,16 +2,14 @@
 
 .fighter-page {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    overflow: hidden;
   }
   
   .fighter-details {
     text-align: center;
-    display: flex;
-    flex-direction: column;
   }
   
   .fighter-image img {
@@ -23,7 +21,7 @@
   .fighter-name p {
     margin-top: 10px;
     opacity: 0; /* Start with opacity 0 */
-    animation: zoom 1s ease forwards; /* Keep the final state */
+    transition: opacity 1s ease forwards; /* Keep the final state */
   }
   
   @keyframes zoom {
@@ -39,3 +37,28 @@
     }
   }
   
+  .click-info {
+    text-align: center;
+    margin-top: 20px; /* Adjust the top margin for spacing */
+  }
+  
+  .click-count,
+  .countdown {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .strengthen-button {
+    background-color: maroon;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Adjust the top margin for spacing */
+  }
+  
+  .strengthen-button:hover {
+    background-color: maroon;
+  }

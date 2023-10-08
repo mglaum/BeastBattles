@@ -98,11 +98,13 @@ const Fighter0 = () => {
         <div className="fighter-name">
           <p>{fighter.name}</p>
         </div>
-        <div>
-        <p>Click Count: {clickCount}</p>
-        <p>Countdown: {formatTime(countdown)}</p>
-        <button onClick={handleButtonClick}>Click me!</button>
-      </div>
+        <div className="click-info">
+          <p className="click-count">Click Count: {clickCount}</p>
+          <p className="countdown">Countdown: {formatTime(countdown)}</p>
+          <button className="strengthen-button" onClick={handleButtonClick}>
+            Strengthen Your Fighter
+          </button>
+        </div>
       </div>
     </div>
   );
