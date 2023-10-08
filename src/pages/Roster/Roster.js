@@ -23,7 +23,8 @@ const Roster = () => {
 
   return (
     <div className="background">
-<div className="image-container">
+        <div className="fire_title"> TODAY'S ROSTER </div>
+<div className="image-container move-up_3">
     <div className="image-container-item">
     <img
         src={FighterData[0].image}

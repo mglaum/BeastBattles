@@ -1,33 +1,38 @@
-import "./Landing.css"
-import { useNavigate } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import './Landing.css';
 
 const Landing = () => {
+  const [fade, setFade] = useState(false);
   const navigate = useNavigate();
 
   const handleClick = () => {
-    // navigate("/test");
-    navigate("/roster"); 
+    setFade(true); // Trigger the fade-out animation
+
+    setTimeout(() => {
+      navigate('/roster'); // Navigate to the next page after the fade-out animation
+    }, 500); // Adjust the duration to match your CSS animation duration
   };
 
+  useEffect(() => {
+    setFade(false); // Reset fade state on component mount
+  }, []);
+
   return (
-    <div className="background">
-     <div className="fire"> 
-        BEAST BATTLES 
+    <div className={`background ${fade ? 'fade-out' : ''}`}>
+      <div className="fire">
+        BEAST BATTLES
         <div>
-          <button class="button-82-pushable" role="button">
-            <span class="button-82-shadow"></span>
-            <span class="button-82-edge"></span>
-           <span class="button-82-front text" onClick={handleClick}>
-            Fight
-          </span>
+          <button className="button-82-pushable" role="button">
+            <span className="button-82-shadow"></span>
+            <span className="button-82-edge"></span>
+            <span className="button-82-front text" onClick={handleClick}>
+              Fight
+            </span>
           </button>
+        </div>
       </div>
-      </div>
-
-
-     </div>
-     
-  
+    </div>
   );
 };
 
