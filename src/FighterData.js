@@ -9,21 +9,23 @@ export const FighterData = [
         name: "Brothers Three", 
     }, 
     {
-        image: require("./images/fighters/FighterImages/cringeboy.jpeg"),
-        name: "CringeBoy2008", 
+        image: require("./images/fighters/FighterImages/madamepookie.jpeg"),
+        name: "Madame Pookie", 
     }, 
+    
     {
         image: require("./images/fighters/FighterImages/jorshua.jpeg"),
         name: "Jorshua", 
     }, 
     {
+        image: require("./images/fighters/FighterImages/cringeboy.jpeg"),
+        name: "CringeBoy2008", 
+    }, 
+    {
         image: require("./images/fighters/FighterImages/sklort.jpeg"),
         name: "Sklort", 
     }, 
-    {
-        image: require("./images/fighters/FighterImages/madamepookie.jpeg"),
-        name: "Madame Pookie", 
-    }, 
+
     {
         image: require("./images/fighters/FighterImages/fartgamble.jpeg"),
         name: "Fart Gamble", 

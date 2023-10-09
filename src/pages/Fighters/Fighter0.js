@@ -2,6 +2,7 @@ import { FighterData } from "../../FighterData";
 import { useParams } from "react-router-dom";
 import React, { useState, useEffect } from 'react';
 import firebaseConfig from '../../firebaseConfig';
+import CountdownTimer from "../CountdownTimer/CountdownTimer";
 
 import firebase from 'firebase/compat/app';  
 import 'firebase/compat/database';
@@ -100,10 +101,17 @@ const Fighter0 = () => {
         </div>
         <div className="click-info">
           <p className="click-count">Click Count: {clickCount}</p>
-          <p className="countdown">Countdown: {formatTime(countdown)}</p>
-          <button className="strengthen-button" onClick={handleButtonClick}>
-            Strengthen Your Fighter
+          {/* <p className="countdown">Countdown: {formatTime(countdown)}</p> */}
+          <button className="button-82-pushable" role="button">
+            <span className="button-82-shadow"></span>
+            <span className="button-82-edge"></span>
+            <span className="button-82-front text" onClick={handleButtonClick}>
+              Strengthen
+            </span>
           </button>
+        </div>
+        <div>
+          <CountdownTimer/>
         </div>
       </div>
     </div>
