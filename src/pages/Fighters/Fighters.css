@@ -12,16 +12,27 @@
     text-align: center;
   }
   
-  .fighter-image img {
+  .fighter-image-zoom img {
     width: 0;
     height: 0;
     animation: zoom 1s ease forwards; /* Keep the final state */
   }
+  .fighter-image-pulse img {
+    width: 0;
+    height: 0;
+    animation: pulse 1s; /* Keep the final state */
+  }
+  .fighter-image img {
+    width: 0;
+    height: 0;
+    /* animation: zoom 1s ease forwards; Keep the final state */
+  }
   
   .fighter-name p {
     margin-top: 10px;
-    opacity: 0; /* Start with opacity 0 */
-    transition: opacity 1s ease forwards; /* Keep the final state */
+    font-size: 40px; 
+    /* opacity: 0; /* Start with opacity 0 */
+    /* transition: opacity 1s ease forwards; Keep the final state */ 
   }
   
   @keyframes zoom {
@@ -47,24 +58,31 @@
     font-size: 18px;
     margin-bottom: 10px;
   }
-  
-
   .strengthen-button {
-    background-color: maroon;
-    color: white;
-    padding: 10px 20px;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px; /* Adjust the top margin for spacing */
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 10px rgba(0, 123, 255, 0.3);
+    font-size: 10px; 
   }
   
-  .strengthen-button:hover {
-    background: linear-gradient(45deg, #007bff, #e14d33);
-    box-shadow: 0 8px 16px rgba(0, 123, 255, 0.3);
-    transform: translateY(-2px);
-    color: white;
+  .back-button {
+    position: absolute; 
+    top: 10%; 
+    left: 10%; 
+    scale: 0.8;
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .animate {
+    animation: pulse 2s; 
   }

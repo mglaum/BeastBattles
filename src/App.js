@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Roster from './pages/Roster/Roster';
 import Fighter1 from './pages/Fighters/Fighter1';
 import firebaseConfig from './firebaseConfig';
+import Winner from './pages/Winner/Winner';
 
 import firebase from 'firebase/compat/app';  // Change this line
 import 'firebase/compat/firestore';          // Change this line
@@ -25,7 +26,8 @@ function App() {
       <Route path='/test' element={ <FighterGenerator/> } />
       <Route path='/instructions' element={<Instructions/> } />
       <Route path='/roster' element={<Roster/>} />
-      <Route path="/:id" element={<Fighter0 />} /> {/* Updated route */}
+      <Route path="/winner" element={<Winner />} /> 
+      <Route path="/:id" element={<Fighter0 />} /> 
     </Routes>
     // <FighterGenerator/>
   );
